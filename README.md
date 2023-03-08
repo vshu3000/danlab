@@ -49,8 +49,10 @@ echo "关键字" > query
 					# 查询关键字就是query文件的内容
 ../download.sh		# 下载图片到raw目录
 ../filter.py		# 过滤图片, 好的进filter，坏的进bad
-../prep.py			# 用webui的预处理流程，训练数据进samples
-../train.sh			# 训练Lora
+			# 完了最好再手工把filter里不好的图片删掉。
+			# 有的黑白图对模型影响很大。
+../prep.py		# 用webui的预处理流程，训练数据进samples
+../train.sh		# 训练Lora
 ../make_images.py	# 产生图片，输出到output，随时按ctrl+C结束
 ```
 
