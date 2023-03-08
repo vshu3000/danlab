@@ -53,6 +53,8 @@ echo "关键字" > query
 			# 有的黑白图对模型影响很大。
 ../prep.py		# 用webui的预处理流程，训练数据进samples
 ../train.sh		# 训练Lora
+# 这里要准备一个prompts文件，两行文本
+# 第一行是正提示，第二行是负提示，放在本目录下
 ../make_images.py	# 产生图片，输出到output，随时按ctrl+C结束
 ```
 
